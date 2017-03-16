@@ -22,6 +22,7 @@
 		2B7170CE1E79270200793DD4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7170CD1E79270200793DD4 /* Common.swift */; };
 		2B7170D01E792E4600793DD4 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7170CF1E792E4600793DD4 /* PageContentView.swift */; };
 		2B7170D21E79300D00793DD4 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7170D11E79300D00793DD4 /* UIColor-Extension.swift */; };
+		2B99C3151E7AD64E00E34DD3 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99C3141E7AD64E00E34DD3 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		2B7170CD1E79270200793DD4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		2B7170CF1E792E4600793DD4 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		2B7170D11E79300D00793DD4 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		2B99C3141E7AD64E00E34DD3 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				2B7170A71E791BC700793DD4 /* Home.storyboard */,
 				2B7170C61E791C7500793DD4 /* HomeViewController.swift */,
+				2B99C3141E7AD64E00E34DD3 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			files = (
 				2B71707B1E786F2C00793DD4 /* AppDelegate.swift in Sources */,
 				2B7170D21E79300D00793DD4 /* UIColor-Extension.swift in Sources */,
+				2B99C3151E7AD64E00E34DD3 /* RecommendViewController.swift in Sources */,
 				2B7170C51E791C1400793DD4 /* MainViewController.swift in Sources */,
 				2B7170CC1E79258C00793DD4 /* PageTitleView.swift in Sources */,
 				2B7170D01E792E4600793DD4 /* PageContentView.swift in Sources */,

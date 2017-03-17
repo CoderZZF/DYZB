@@ -20,6 +20,7 @@ private let kPrettyCellID = "kPrettyCellID"
 
 class RecommendViewController: UIViewController {
     // MARK:- 懒加载属性
+    private lazy var recommentVM : RecommentViewModel = RecommentViewModel()
     private lazy var collectionView : UICollectionView = {[unowned self] in
         // 1. 创建布局
         let layout = UICollectionViewFlowLayout()
@@ -48,6 +49,9 @@ class RecommendViewController: UIViewController {
         
         // 设置UI界面
         setupUI()
+        
+        // 发送网络请求
+        loadData()
     }
 }
 
@@ -57,6 +61,13 @@ extension RecommendViewController {
     private func setupUI() {
         // 1. 将UICollectionView添加到控制器的View
         view.addSubview(collectionView)
+    }
+}
+
+// MARK:- 请求数据
+extension RecommendViewController {
+    private func loadData() {
+        recommentVM.requestData()
     }
 }
 

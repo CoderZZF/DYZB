@@ -37,10 +37,10 @@ class RecommendGameView: UIView {
         super.awakeFromNib()
         
         // 移除autoresizingMask
-        autoresizingMask = .None
+        autoresizingMask = UIViewAutoresizing()
         
         // 注册cell
-        collectionView.registerNib(UINib(nibName: "CollectionGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
+        collectionView.register(UINib(nibName: "CollectionGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
         
         // 给collectionView添加内边距
         collectionView.contentInset = UIEdgeInsets(top: 0, left: kEdgeInsetMargin, bottom: 0, right: kEdgeInsetMargin)
@@ -51,20 +51,20 @@ class RecommendGameView: UIView {
 // MARK:- 快速创建的类方法
 extension RecommendGameView {
     class func recommendGameView() -> RecommendGameView {
-        return NSBundle.mainBundle().loadNibNamed("RecommendGameView", owner: nil, options: nil).first as! RecommendGameView
+        return Bundle.main.loadNibNamed("RecommendGameView", owner: nil, options: nil)?.first as! RecommendGameView
     }
 }
 
 // MARK:- 遵守UICollectionView的数据源协议
 extension RecommendGameView : UICollectionViewDataSource {
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return groups?.count ?? 0
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kGameCellID, forIndexPath: indexPath) as! CollectionGameCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionGameCell
         
-        cell.group = groups![indexPath.item]
+        cell.group = groups![(indexPath as NSIndexPath).item]
         
         return cell
     }

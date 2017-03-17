@@ -20,7 +20,7 @@ class CollectionPrettyCell: CollectionBaseCell {
             super.anchor = anchor
             
             // 2. 显示所在城市
-            cityBtn.setTitle(anchor?.anchor_city, forState: .Normal)
+            cityBtn.setTitle(anchor?.anchor_city, for: UIControlState())
        
         }
     }

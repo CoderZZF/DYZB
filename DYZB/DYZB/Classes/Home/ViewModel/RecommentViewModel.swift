@@ -12,25 +12,25 @@ class RecommentViewModel {
     // MARK:- 懒加载属性
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
     lazy var cycleModels : [CycleModel] = [CycleModel]()
-    private lazy var bigDataGroup : AnchorGroup = AnchorGroup()
-    private lazy var prettyGroup : AnchorGroup = AnchorGroup()
+    fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
+    fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
 }
 
 
 // MARK:- 发送网络请求
 extension RecommentViewModel {
     // 请求推荐数据
-    func requestData(finishedCallBack : () -> ()) {
+    func requestData(_ finishedCallBack : @escaping () -> ()) {
         // 1. 定义参数
-        let parameters = ["limit" : "4", "offset" : "0", "time" : NSDate.getCurrentTime()]
+        let parameters = ["limit" : "4", "offset" : "0", "time" : Date.getCurrentTime()]
         
         // 2. 创建group
-        let dGroup = dispatch_group_create()
+        let dGroup = DispatchGroup()
         
         // 3. 请求第一部分推荐数据
-        dispatch_group_enter(dGroup)
+        dGroup.enter()
         //http://capi.douyucdn.cn/api/v1/getbigDataRoom?time=1489733669
-        NetworkTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time" : NSDate.getCurrentTime()]) { (result) in
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom", parameters: ["time" : Date.getCurrentTime()]) { (result) in
             // 1. 将result转成字典类型
             guard let resultDict = result as? [String : NSObject] else {
                 return
@@ -53,13 +53,13 @@ extension RecommentViewModel {
             }
             
             // 3.3 离开组
-            dispatch_group_leave(dGroup)
+            dGroup.leave()
 //            print("热门数据")
         }
         
         // 4. 请求第二部分颜值数据
-        dispatch_group_enter(dGroup)
-        NetworkTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", parameters: parameters) { (result) in
+        dGroup.enter()
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom", parameters: parameters) { (result) in
             // 1. 将result转成字典类型
             guard let resultDict = result as? [String : NSObject] else {
                 return
@@ -82,15 +82,15 @@ extension RecommentViewModel {
             }
             
             // 3.3 离开组
-            dispatch_group_leave(dGroup)
+            dGroup.leave()
 //            print("颜值数据")
         }
         
         // 5. 请求游戏数据
         // http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1489733669
 //        print(NSDate.getCurrentTime())
-        dispatch_group_enter(dGroup)
-        NetworkTools.requestData(.GET, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
+        dGroup.enter()
+        NetworkTools.requestData(.get, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
             // 1. 将result转成字典类型
             guard let resultDict = result as? [String : NSObject] else {
                 return
@@ -107,15 +107,15 @@ extension RecommentViewModel {
                 self.anchorGroups.append(group)
             }
             // 4 离开组
-            dispatch_group_leave(dGroup)
+            dGroup.leave()
 //            print("游戏数据")
         }
         
         // 6. 所有的数据都请求到,然后进行排序
-        dispatch_group_notify(dGroup, dispatch_get_main_queue()) { 
+        dGroup.notify(queue: DispatchQueue.main) { 
 //            print("所有的数组都请求到了")
-            self.anchorGroups.insert(self.prettyGroup, atIndex: 0)
-            self.anchorGroups.insert(self.bigDataGroup, atIndex: 0)
+            self.anchorGroups.insert(self.prettyGroup, at: 0)
+            self.anchorGroups.insert(self.bigDataGroup, at: 0)
             
             finishedCallBack()
         }
@@ -123,8 +123,8 @@ extension RecommentViewModel {
     
     // 请求无限轮播数据
     //
-    func reqeustCycleData(finishedCallBack : () -> ()) {
-        NetworkTools.requestData(.GET, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { (result) in
+    func reqeustCycleData(_ finishedCallBack : @escaping () -> ()) {
+        NetworkTools.requestData(.get, URLString: "http://www.douyutv.com/api/v1/slide/6", parameters: ["version" : "2.300"]) { (result) in
             // 1. 获取整体字典数据
             guard let resultDict = result as? [String : NSObject] else { return }
             

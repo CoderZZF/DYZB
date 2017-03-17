@@ -27,14 +27,14 @@ class CollectionBaseCell: UICollectionViewCell {
             } else {
                 onlineStr = "\(anchor.online)在线"
             }
-            onlineBtn.setTitle(onlineStr, forState: .Normal)
+            onlineBtn.setTitle(onlineStr, for: UIControlState())
             
             // 2. 显示昵称
             nicknameLabel.text = anchor.nickname
             
             // 3. 显示封面图片
-            guard let iconURL = NSURL(string: anchor.vertical_src) else { return }
-            iconImageView.kf_setImageWithURL(iconURL)
+            guard let iconURL = URL(string: anchor.vertical_src) else { return }
+            iconImageView.kf.setImage(with:iconURL)
         }
     }
 

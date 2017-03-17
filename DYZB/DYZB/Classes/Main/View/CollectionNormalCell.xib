@@ -13,6 +13,15 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="291" height="178"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="m9W-Ps-MP8">
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="149"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="d6W-g0-48X">
                         <rect key="frame" x="0.0" y="154" width="14" height="14"/>
                         <constraints>
@@ -37,15 +46,6 @@
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="666在线" image="Image_online"/>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="m9W-Ps-MP8">
-                        <rect key="frame" x="0.0" y="0.0" width="291" height="149"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="5"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -65,6 +65,12 @@
                 <constraint firstItem="HCq-5v-hZC" firstAttribute="leading" secondItem="m9W-Ps-MP8" secondAttribute="leading" constant="5" id="mr2-xK-yFy"/>
             </constraints>
             <size key="customSize" width="291" height="178"/>
+            <connections>
+                <outlet property="iconImageView" destination="m9W-Ps-MP8" id="YrU-xN-N4q"/>
+                <outlet property="nicknameLabel" destination="HCq-5v-hZC" id="AWj-QN-HO5"/>
+                <outlet property="onlineBtn" destination="lIw-yk-5gd" id="TmN-Lr-4As"/>
+                <outlet property="roomnameLabel" destination="lUZ-tU-rSx" id="eAA-b7-OZo"/>
+            </connections>
             <point key="canvasLocation" x="326.5" y="281"/>
         </collectionViewCell>
     </objects>

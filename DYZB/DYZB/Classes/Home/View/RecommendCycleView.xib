@@ -30,7 +30,7 @@
                     <color key="currentPageIndicatorTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
             </subviews>
-            <color key="backgroundColor" red="0.46191030740737915" green="0.94264274835586548" blue="0.1268467903137207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ALg-Rf-LSf" secondAttribute="trailing" id="5mF-79-Pwj"/>
                 <constraint firstAttribute="trailing" secondItem="2gd-ib-uHj" secondAttribute="trailing" constant="10" id="73c-8X-sNb"/>

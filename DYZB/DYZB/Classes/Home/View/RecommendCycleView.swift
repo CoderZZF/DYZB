@@ -34,7 +34,7 @@ class RecommendCycleView: UIView {
         autoresizingMask = .None
         
         // 注册cell
-        collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: kCycleCellID)
+        collectionView.registerNib(UINib(nibName: "CollectionCycleCell",bundle: nil), forCellWithReuseIdentifier: kCycleCellID)
     }
     
     override func layoutSubviews() {
@@ -67,9 +67,21 @@ extension RecommendCycleView : UICollectionViewDataSource {
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cycleModel = cycleModels![indexPath.item]
         
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCycleCellID, forIndexPath: indexPath)
-        cell.backgroundColor = indexPath.item % 2 == 0 ? UIColor.redColor() : UIColor.blueColor()
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(kCycleCellID, forIndexPath: indexPath) as! CollectionCycleCell
+        
+        cell.cycleModel = cycleModel
         
         return cell
+    }
+}
+
+// MARK:- 遵守UICollectionView的代理协议
+extension RecommendCycleView : UICollectionViewDelegate {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        // 1. 获取滚动的偏移量
+        let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
+        
+        // 2. 计算pagecontroldecurrentIndex
+        pageControl.currentPage = Int(offsetX / scrollView.bounds.width)
     }
 }

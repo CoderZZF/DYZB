@@ -16,6 +16,8 @@
 		2B12B36E1E7BE2BB0032BF83 /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B36D1E7BE2BB0032BF83 /* RecommendCycleView.swift */; };
 		2B12B3701E7BE2D00032BF83 /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B12B36F1E7BE2D00032BF83 /* RecommendCycleView.xib */; };
 		2B12B3721E7C0AF50032BF83 /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B3711E7C0AF50032BF83 /* CycleModel.swift */; };
+		2B12B3751E7C13E30032BF83 /* CollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B12B3731E7C13E30032BF83 /* CollectionCycleCell.swift */; };
+		2B12B3761E7C13E30032BF83 /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B12B3741E7C13E30032BF83 /* CollectionCycleCell.xib */; };
 		2B71707B1E786F2C00793DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71707A1E786F2C00793DD4 /* AppDelegate.swift */; };
 		2B7170821E786F2C00793DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7170811E786F2C00793DD4 /* Assets.xcassets */; };
 		2B7170851E786F2C00793DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7170831E786F2C00793DD4 /* LaunchScreen.storyboard */; };
@@ -52,6 +54,8 @@
 		2B12B36D1E7BE2BB0032BF83 /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		2B12B36F1E7BE2D00032BF83 /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		2B12B3711E7C0AF50032BF83 /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
+		2B12B3731E7C13E30032BF83 /* CollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionCycleCell.swift; sourceTree = "<group>"; };
+		2B12B3741E7C13E30032BF83 /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
 		2B7170771E786F2C00793DD4 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B71707A1E786F2C00793DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7170811E786F2C00793DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -211,6 +215,8 @@
 				2B99C3171E7AFA3200E34DD3 /* CollectionHeaderView.xib */,
 				2B12B36D1E7BE2BB0032BF83 /* RecommendCycleView.swift */,
 				2B12B36F1E7BE2D00032BF83 /* RecommendCycleView.xib */,
+				2B12B3731E7C13E30032BF83 /* CollectionCycleCell.swift */,
+				2B12B3741E7C13E30032BF83 /* CollectionCycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,6 +434,7 @@
 				2B7170B81E791BC700793DD4 /* Follow.storyboard in Resources */,
 				2B7170BA1E791BC700793DD4 /* Live.storyboard in Resources */,
 				2B12B3701E7BE2D00032BF83 /* RecommendCycleView.xib in Resources */,
+				2B12B3761E7C13E30032BF83 /* CollectionCycleCell.xib in Resources */,
 				2B99C3211E7B005300E34DD3 /* CollectionPrettyCell.xib in Resources */,
 				2B7170BD1E791BC700793DD4 /* Profile.storyboard in Resources */,
 				2B7170B91E791BC700793DD4 /* Home.storyboard in Resources */,
@@ -497,6 +504,7 @@
 				2B12B3681E7BC1FD0032BF83 /* AnchorGroup.swift in Sources */,
 				2B7170C51E791C1400793DD4 /* MainViewController.swift in Sources */,
 				2B7170CC1E79258C00793DD4 /* PageTitleView.swift in Sources */,
+				2B12B3751E7C13E30032BF83 /* CollectionCycleCell.swift in Sources */,
 				2B12B3721E7C0AF50032BF83 /* CycleModel.swift in Sources */,
 				2B7170D01E792E4600793DD4 /* PageContentView.swift in Sources */,
 				2B7170CA1E791FF800793DD4 /* UIBarButtonItem-Extension.swift in Sources */,

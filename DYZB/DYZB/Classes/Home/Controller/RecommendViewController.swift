@@ -94,8 +94,12 @@ extension RecommendViewController {
 extension RecommendViewController {
     private func loadData() {
         // 1. 请求推荐数据
-        recommentVM.requestData { 
+        recommentVM.requestData {
+            // 1. 展示推荐数据
             self.collectionView.reloadData()
+            
+            // 2. 将数据传递给GameView
+            self.gameView.groups = self.recommentVM.anchorGroups
         }
         
         // 2. 请求轮播数据

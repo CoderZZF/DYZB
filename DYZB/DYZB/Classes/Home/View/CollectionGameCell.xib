@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-ZH-f1M">
+                        <rect key="frame" x="16" y="65" width="48" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="w7L-W0-jVO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nNG-iR-g1v">
+                        <rect key="frame" x="18" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nNG-iR-g1v" secondAttribute="height" multiplier="30:19" id="RMl-q0-xyZ"/>
+                            <constraint firstAttribute="width" secondItem="nNG-iR-g1v" secondAttribute="height" id="WoE-24-GDV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <real key="value" value="22.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="RMl-q0-xyZ"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MX2-ZH-f1M" secondAttribute="bottom" constant="10" id="1Zy-yp-BVT"/>
+                <constraint firstItem="MX2-ZH-f1M" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="D3h-Ob-RNP"/>
+                <constraint firstItem="nNG-iR-g1v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="DKi-MR-1G2"/>
+                <constraint firstItem="MX2-ZH-f1M" firstAttribute="top" secondItem="nNG-iR-g1v" secondAttribute="bottom" constant="5" id="Dx4-yl-Fk7"/>
+                <constraint firstItem="nNG-iR-g1v" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dFa-VW-7UV"/>
+            </constraints>
+            <size key="customSize" width="87" height="107"/>
+            <connections>
+                <outlet property="iconImageView" destination="nNG-iR-g1v" id="nIW-l9-9g8"/>
+                <outlet property="titleLabel" destination="MX2-ZH-f1M" id="hr0-iy-7Ig"/>
+            </connections>
+            <point key="canvasLocation" x="275" y="321"/>
+        </collectionViewCell>
+    </objects>
+</document>

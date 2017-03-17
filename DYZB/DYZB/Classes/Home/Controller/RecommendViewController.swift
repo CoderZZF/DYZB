@@ -14,6 +14,8 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
+private let kCycleViewH = kScreenW * 3 / 8
+
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderCellID = "kHeaderCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -35,12 +37,19 @@ class RecommendViewController: UIViewController {
         collectionView.backgroundColor = UIColor.whiteColor()
         collectionView.dataSource = self
         collectionView.delegate = self
+        // 设置自动伸缩的属性
+        collectionView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        
         collectionView.registerNib(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
         collectionView.registerNib(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
         collectionView.registerNib(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderCellID)
-        collectionView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
         
         return collectionView
+    }()
+    private lazy var cycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
     }()
     
     // MARK:- 系统回调函数
@@ -61,6 +70,12 @@ extension RecommendViewController {
     private func setupUI() {
         // 1. 将UICollectionView添加到控制器的View
         view.addSubview(collectionView)
+        
+        // 2. 将CycleView添加到UICollectionView中
+        collectionView.addSubview(cycleView)
+        
+        // 3. 设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0) 
     }
 }
 

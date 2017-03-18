@@ -27,6 +27,7 @@
 		2B63EADD1E7D120D00BAE5B3 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EADC1E7D120D00BAE5B3 /* GameModel.swift */; };
 		2B63EADF1E7D131D00BAE5B3 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EADE1E7D131D00BAE5B3 /* BaseGameModel.swift */; };
 		2B63EAE11E7D23CD00BAE5B3 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EAE01E7D23CD00BAE5B3 /* AmuseViewController.swift */; };
+		2B63EAE31E7D286200BAE5B3 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EAE21E7D286200BAE5B3 /* AmuseViewModel.swift */; };
 		2B71707B1E786F2C00793DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71707A1E786F2C00793DD4 /* AppDelegate.swift */; };
 		2B7170821E786F2C00793DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7170811E786F2C00793DD4 /* Assets.xcassets */; };
 		2B7170851E786F2C00793DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7170831E786F2C00793DD4 /* LaunchScreen.storyboard */; };
@@ -74,6 +75,7 @@
 		2B63EADC1E7D120D00BAE5B3 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		2B63EADE1E7D131D00BAE5B3 /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		2B63EAE01E7D23CD00BAE5B3 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
+		2B63EAE21E7D286200BAE5B3 /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		2B7170771E786F2C00793DD4 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B71707A1E786F2C00793DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7170811E786F2C00793DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				2B12B3631E7BBC0C0032BF83 /* RecommentViewModel.swift */,
 				2B63EADA1E7D0F0600BAE5B3 /* GameViewModel.swift */,
+				2B63EAE21E7D286200BAE5B3 /* AmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 			files = (
 				2B12B36E1E7BE2BB0032BF83 /* RecommendCycleView.swift in Sources */,
 				2B71707B1E786F2C00793DD4 /* AppDelegate.swift in Sources */,
+				2B63EAE31E7D286200BAE5B3 /* AmuseViewModel.swift in Sources */,
 				2B99C3181E7AFA3200E34DD3 /* CollectionHeaderView.swift in Sources */,
 				2B63EADB1E7D0F0600BAE5B3 /* GameViewModel.swift in Sources */,
 				2B7170D21E79300D00793DD4 /* UIColor-Extension.swift in Sources */,

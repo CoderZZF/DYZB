@@ -2,13 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DYZB" customModuleProvider="target">
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionGameCell" customModule="DYZB" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -16,17 +15,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX2-ZH-f1M">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="15" id="w7L-W0-jVO"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nNG-iR-g1v">
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="nNG-iR-g1v" secondAttribute="height" multiplier="30:19" id="RMl-q0-xyZ"/>
-                            <constraint firstAttribute="width" secondItem="nNG-iR-g1v" secondAttribute="height" id="WoE-24-GDV"/>
+                            <constraint firstAttribute="width" constant="45" id="CQg-W1-Pnh"/>
+                            <constraint firstAttribute="height" constant="45" id="EAH-f2-9qh"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -34,20 +30,23 @@
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="RMl-q0-xyZ"/>
-                            </mask>
-                        </variation>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FM-cu-wlM">
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Bzy-Jc-aCO"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="MX2-ZH-f1M" secondAttribute="bottom" constant="10" id="1Zy-yp-BVT"/>
-                <constraint firstItem="MX2-ZH-f1M" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="D3h-Ob-RNP"/>
-                <constraint firstItem="nNG-iR-g1v" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="DKi-MR-1G2"/>
-                <constraint firstItem="MX2-ZH-f1M" firstAttribute="top" secondItem="nNG-iR-g1v" secondAttribute="bottom" constant="5" id="Dx4-yl-Fk7"/>
-                <constraint firstItem="nNG-iR-g1v" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dFa-VW-7UV"/>
+                <constraint firstItem="nNG-iR-g1v" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ENs-k4-Fil"/>
+                <constraint firstItem="4FM-cu-wlM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HQz-9Y-xVg"/>
+                <constraint firstAttribute="trailing" secondItem="4FM-cu-wlM" secondAttribute="trailing" id="Ooo-DY-ewF"/>
+                <constraint firstAttribute="bottom" secondItem="4FM-cu-wlM" secondAttribute="bottom" constant="-1" id="aPB-CB-aQT"/>
+                <constraint firstItem="MX2-ZH-f1M" firstAttribute="top" secondItem="nNG-iR-g1v" secondAttribute="bottom" constant="5" id="d0T-72-rBx"/>
+                <constraint firstItem="nNG-iR-g1v" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-8" id="gOi-CE-xWM"/>
+                <constraint firstItem="MX2-ZH-f1M" firstAttribute="centerX" secondItem="nNG-iR-g1v" secondAttribute="centerX" id="rNT-Op-aZK"/>
             </constraints>
             <size key="customSize" width="87" height="107"/>
             <connections>

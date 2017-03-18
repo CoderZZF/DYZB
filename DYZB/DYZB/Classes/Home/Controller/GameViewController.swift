@@ -15,10 +15,26 @@ private let kEdgeMargin : CGFloat = 10
 private let kItemW : CGFloat = (kScreenW - 2 * kEdgeMargin) / 3
 private let kItemH : CGFloat = kItemW * 6 / 5
 private let kHeaderViewH : CGFloat = 50
+private let kGameViewH : CGFloat = 90
 
 class GameViewController: UIViewController {
     // MARK: 懒加载属性
     fileprivate lazy var gameVM : GameViewModel = GameViewModel()
+    fileprivate lazy var topHeaderView : CollectionHeaderView = {
+        let headerView = CollectionHeaderView.collectionHeaderView()
+        headerView.frame = CGRect(x: 0, y: -(kHeaderViewH + kGameViewH), width: kScreenW, height: kHeaderViewH)
+        headerView.iconImageView.image = UIImage(named: "Img_orange")
+        headerView.titleLabel.text = "常用"
+        headerView.moreBtn.isHidden = true
+        
+        return headerView
+    }()
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        
+        return gameView
+    }()
     fileprivate lazy var collectionView : UICollectionView = {[unowned self] in
         // 1. 创建布局
         let layout = UICollectionViewFlowLayout()
@@ -53,7 +69,17 @@ class GameViewController: UIViewController {
 // MARK:- 设置UI界面
 extension GameViewController {
     fileprivate func setupUI() {
+        // 1. 添加collectionView
         view.addSubview(collectionView)
+        
+        // 2. 添加顶部的headerView
+        collectionView.addSubview(topHeaderView)
+        
+        // 3. 将常用游戏的view添加到collectionView中
+        collectionView.addSubview(gameView)
+        
+        // 4. 设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 

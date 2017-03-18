@@ -32,6 +32,8 @@
 		2B63EAEB1E7D582900BAE5B3 /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EAEA1E7D582900BAE5B3 /* BaseAnchorViewController.swift */; };
 		2B63EAED1E7D645800BAE5B3 /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EAEC1E7D645800BAE5B3 /* AmuseMenuView.swift */; };
 		2B63EAEF1E7D647200BAE5B3 /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B63EAEE1E7D647200BAE5B3 /* AmuseMenuView.xib */; };
+		2B63EAF21E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B63EAF01E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift */; };
+		2B63EAF31E7D6DC400BAE5B3 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B63EAF11E7D6DC400BAE5B3 /* AmuseMenuViewCell.xib */; };
 		2B71707B1E786F2C00793DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B71707A1E786F2C00793DD4 /* AppDelegate.swift */; };
 		2B7170821E786F2C00793DD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7170811E786F2C00793DD4 /* Assets.xcassets */; };
 		2B7170851E786F2C00793DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7170831E786F2C00793DD4 /* LaunchScreen.storyboard */; };
@@ -84,6 +86,8 @@
 		2B63EAEA1E7D582900BAE5B3 /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
 		2B63EAEC1E7D645800BAE5B3 /* AmuseMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
 		2B63EAEE1E7D647200BAE5B3 /* AmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
+		2B63EAF01E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
+		2B63EAF11E7D6DC400BAE5B3 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		2B7170771E786F2C00793DD4 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B71707A1E786F2C00793DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B7170811E786F2C00793DD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 				2B12B37C1E7C30A00032BF83 /* CollectionGameCell.xib */,
 				2B63EAEC1E7D645800BAE5B3 /* AmuseMenuView.swift */,
 				2B63EAEE1E7D647200BAE5B3 /* AmuseMenuView.xib */,
+				2B63EAF01E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift */,
+				2B63EAF11E7D6DC400BAE5B3 /* AmuseMenuViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -478,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B7170C41E791C1400793DD4 /* Main.storyboard in Resources */,
+				2B63EAF31E7D6DC400BAE5B3 /* AmuseMenuViewCell.xib in Resources */,
 				2B99C3191E7AFA3200E34DD3 /* CollectionHeaderView.xib in Resources */,
 				2B99C31D1E7AFCD900E34DD3 /* CollectionNormalCell.xib in Resources */,
 				2B7170851E786F2C00793DD4 /* LaunchScreen.storyboard in Resources */,
@@ -560,6 +567,7 @@
 				2B63EAD91E7D0AC800BAE5B3 /* GameViewController.swift in Sources */,
 				2B99C3151E7AD64E00E34DD3 /* RecommendViewController.swift in Sources */,
 				2B12B3681E7BC1FD0032BF83 /* AnchorGroup.swift in Sources */,
+				2B63EAF21E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift in Sources */,
 				2B7170C51E791C1400793DD4 /* MainViewController.swift in Sources */,
 				2B7170CC1E79258C00793DD4 /* PageTitleView.swift in Sources */,
 				2B63EAE91E7D56EA00BAE5B3 /* BaseViewModel.swift in Sources */,

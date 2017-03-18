@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,27 +12,22 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Bo-NZ-jJL">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
-                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="10" id="rYf-X5-c2U"/>
                     </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_hot" translatesAutoresizingMaskIntoConstraints="NO" id="V6L-kf-mRn">
-                    <rect key="frame" x="10" y="18" width="18" height="18"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="18" id="0P4-es-awO"/>
                         <constraint firstAttribute="height" constant="18" id="wYM-mU-U9y"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZX-f6-fk0">
-                    <rect key="frame" x="33" y="17" width="32" height="20"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2r-O9-JJm">
-                    <rect key="frame" x="250" y="15" width="60" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="60" id="cug-rb-lZH"/>
                     </constraints>
@@ -41,7 +36,7 @@
                     </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="V6L-kf-mRn" firstAttribute="top" secondItem="9Bo-NZ-jJL" secondAttribute="bottom" constant="1" id="6G8-4y-vcw"/>
                 <constraint firstItem="5ZX-f6-fk0" firstAttribute="leading" secondItem="V6L-kf-mRn" secondAttribute="trailing" constant="5" id="8dD-qr-C0C"/>
@@ -64,6 +59,7 @@
             </variation>
             <connections>
                 <outlet property="iconImageView" destination="V6L-kf-mRn" id="s5c-b2-LKG"/>
+                <outlet property="moreBtn" destination="K2r-O9-JJm" id="qAB-Zi-7Xs"/>
                 <outlet property="titleLabel" destination="5ZX-f6-fk0" id="tbo-QN-xgT"/>
             </connections>
             <point key="canvasLocation" x="276" y="176"/>

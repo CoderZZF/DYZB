@@ -57,6 +57,7 @@
 		2B99C3201E7B005300E34DD3 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B99C31E1E7B005300E34DD3 /* CollectionPrettyCell.swift */; };
 		2B99C3211E7B005300E34DD3 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B99C31F1E7B005300E34DD3 /* CollectionPrettyCell.xib */; };
 		2BBED5A81E7ED6350044AC92 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5A71E7ED6350044AC92 /* FunnyViewController.swift */; };
+		2BBED5AA1E7ED9280044AC92 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5A91E7ED9280044AC92 /* FunnyViewModel.swift */; };
 		5589AA5F768D1A5B934BC5B3 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60147CBA61C5A43231EDDF4 /* Pods_DYZB.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		2B99C31E1E7B005300E34DD3 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		2B99C31F1E7B005300E34DD3 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		2BBED5A71E7ED6350044AC92 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		2BBED5A91E7ED9280044AC92 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		C60147CBA61C5A43231EDDF4 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC41F0B3FEAAD1633E2C5F7 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 				2B12B3631E7BBC0C0032BF83 /* RecommentViewModel.swift */,
 				2B63EADA1E7D0F0600BAE5B3 /* GameViewModel.swift */,
 				2B63EAE21E7D286200BAE5B3 /* AmuseViewModel.swift */,
+				2BBED5A91E7ED9280044AC92 /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				2B63EAE91E7D56EA00BAE5B3 /* BaseViewModel.swift in Sources */,
 				2B12B3751E7C13E30032BF83 /* CollectionCycleCell.swift in Sources */,
 				2B63EADD1E7D120D00BAE5B3 /* GameModel.swift in Sources */,
+				2BBED5AA1E7ED9280044AC92 /* FunnyViewModel.swift in Sources */,
 				2B63EADF1E7D131D00BAE5B3 /* BaseGameModel.swift in Sources */,
 				2B12B3721E7C0AF50032BF83 /* CycleModel.swift in Sources */,
 				2B63EAE11E7D23CD00BAE5B3 /* AmuseViewController.swift in Sources */,

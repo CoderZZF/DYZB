@@ -59,6 +59,8 @@
 		2BBED5A81E7ED6350044AC92 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5A71E7ED6350044AC92 /* FunnyViewController.swift */; };
 		2BBED5AA1E7ED9280044AC92 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5A91E7ED9280044AC92 /* FunnyViewModel.swift */; };
 		2BBED5AC1E7EE5DD0044AC92 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5AB1E7EE5DD0044AC92 /* BaseViewController.swift */; };
+		2BBED5B21E7F98BF0044AC92 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5B11E7F98BF0044AC92 /* RoomShowViewController.swift */; };
+		2BBED5B41E7F98DC0044AC92 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5B31E7F98DC0044AC92 /* RoomNormalViewController.swift */; };
 		5589AA5F768D1A5B934BC5B3 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60147CBA61C5A43231EDDF4 /* Pods_DYZB.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +120,8 @@
 		2BBED5A71E7ED6350044AC92 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		2BBED5A91E7ED9280044AC92 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		2BBED5AB1E7EE5DD0044AC92 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2BBED5B11E7F98BF0044AC92 /* RoomShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		2BBED5B31E7F98DC0044AC92 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
 		C60147CBA61C5A43231EDDF4 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC41F0B3FEAAD1633E2C5F7 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +192,7 @@
 			children = (
 				2B7170BE1E791C1400793DD4 /* Main */,
 				2B7170A51E791BC700793DD4 /* Home */,
+				2BBED5AD1E7F98980044AC92 /* Room */,
 				2B7170AA1E791BC700793DD4 /* Live */,
 				2B7170A01E791BC700793DD4 /* Follow */,
 				2B7170B21E791BC700793DD4 /* Profile */,
@@ -412,6 +417,39 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		2BBED5AD1E7F98980044AC92 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				2BBED5AF1E7F98980044AC92 /* Model */,
+				2BBED5B01E7F98980044AC92 /* View */,
+				2BBED5AE1E7F98980044AC92 /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		2BBED5AE1E7F98980044AC92 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BBED5B11E7F98BF0044AC92 /* RoomShowViewController.swift */,
+				2BBED5B31E7F98DC0044AC92 /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2BBED5AF1E7F98980044AC92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BBED5B01E7F98980044AC92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		430C27944ED686C4CAF72085 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,6 +616,7 @@
 				2B99C3151E7AD64E00E34DD3 /* RecommendViewController.swift in Sources */,
 				2B12B3681E7BC1FD0032BF83 /* AnchorGroup.swift in Sources */,
 				2B63EAF21E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift in Sources */,
+				2BBED5B41E7F98DC0044AC92 /* RoomNormalViewController.swift in Sources */,
 				2BBED5A81E7ED6350044AC92 /* FunnyViewController.swift in Sources */,
 				2B7170C51E791C1400793DD4 /* MainViewController.swift in Sources */,
 				2B7170CC1E79258C00793DD4 /* PageTitleView.swift in Sources */,
@@ -599,6 +638,7 @@
 				2B99C31C1E7AFCD900E34DD3 /* CollectionNormalCell.swift in Sources */,
 				2B12B37D1E7C30A00032BF83 /* CollectionGameCell.swift in Sources */,
 				2B12B3611E7BB7DA0032BF83 /* NetworkTools.swift in Sources */,
+				2BBED5B21E7F98BF0044AC92 /* RoomShowViewController.swift in Sources */,
 				2B7170C71E791C7500793DD4 /* HomeViewController.swift in Sources */,
 				2B12B3641E7BBC0C0032BF83 /* RecommentViewModel.swift in Sources */,
 				2B12B36A1E7BC5560032BF83 /* AnchorModel.swift in Sources */,

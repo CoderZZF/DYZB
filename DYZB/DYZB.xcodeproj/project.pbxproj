@@ -61,6 +61,7 @@
 		2BBED5AC1E7EE5DD0044AC92 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5AB1E7EE5DD0044AC92 /* BaseViewController.swift */; };
 		2BBED5B21E7F98BF0044AC92 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5B11E7F98BF0044AC92 /* RoomShowViewController.swift */; };
 		2BBED5B41E7F98DC0044AC92 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5B31E7F98DC0044AC92 /* RoomNormalViewController.swift */; };
+		2BBED5B61E7F9AFC0044AC92 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBED5B51E7F9AFC0044AC92 /* CustomNavigationController.swift */; };
 		5589AA5F768D1A5B934BC5B3 /* Pods_DYZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60147CBA61C5A43231EDDF4 /* Pods_DYZB.framework */; };
 /* End PBXBuildFile section */
 
@@ -122,6 +123,7 @@
 		2BBED5AB1E7EE5DD0044AC92 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2BBED5B11E7F98BF0044AC92 /* RoomShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
 		2BBED5B31E7F98DC0044AC92 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		2BBED5B51E7F9AFC0044AC92 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		C60147CBA61C5A43231EDDF4 /* Pods_DYZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC41F0B3FEAAD1633E2C5F7 /* Pods-DYZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYZB/Pods-DYZB.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -379,6 +381,7 @@
 				2B7170C11E791C1400793DD4 /* MainViewController.swift */,
 				2B63EAEA1E7D582900BAE5B3 /* BaseAnchorViewController.swift */,
 				2BBED5AB1E7EE5DD0044AC92 /* BaseViewController.swift */,
+				2BBED5B51E7F9AFC0044AC92 /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				2B99C3151E7AD64E00E34DD3 /* RecommendViewController.swift in Sources */,
 				2B12B3681E7BC1FD0032BF83 /* AnchorGroup.swift in Sources */,
 				2B63EAF21E7D6DC400BAE5B3 /* AmuseMenuViewCell.swift in Sources */,
+				2BBED5B61E7F9AFC0044AC92 /* CustomNavigationController.swift in Sources */,
 				2BBED5B41E7F98DC0044AC92 /* RoomNormalViewController.swift in Sources */,
 				2BBED5A81E7ED6350044AC92 /* FunnyViewController.swift in Sources */,
 				2B7170C51E791C1400793DD4 /* MainViewController.swift in Sources */,

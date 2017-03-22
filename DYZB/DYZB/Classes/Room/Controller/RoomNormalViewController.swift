@@ -23,8 +23,8 @@ class RoomNormalViewController: UIViewController, UIGestureRecognizerDelegate {
         navigationController?.setNavigationBarHidden(true, animated: true)
         
         // 依然保持手势
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+//        navigationController?.interactivePopGestureRecognizer?.delegate = self
+//        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
